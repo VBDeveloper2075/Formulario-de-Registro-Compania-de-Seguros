@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Seguro No Pago</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="form-contact">
+            <header>
+                <span>
+                    <img class="logo" src="./imagenes/undraw_security_on_re_e491.svg" alt="logo seguridad">
+                </span>
+            </header>
+       
+            <form class="list" name="form_registro" onsubmit="registrarse(); return false">
+                <div>
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" id="nombre_id">
+                </div>
+                <div id="nombre_error"></div>
+                <div>
+                    <label>Apellido</label>
+                    <input type="text" name="apellido" id="apellido_id">
+                </div>
+                <div>
+                    <label>DNI</label>
+                    <input type="text" name="nombre" id="nombre_id">
+                </div>
+                <div class="container-flex">
+                    <label>Tipo de seguro</label>
+                    <select name="tipo_seguro" id="tipo_seguro_id" onchange="tipoSeguro()">
+                        <option value="1">Basico</option>
+                        <option value="2">Intermedio</option>
+                        <option value="3">Premium</option>
+                    </select>
+                    <button class="saludar" onclick="saludo()">Quiero saber más</button>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="email" name="email" id="email_id">
+                </div>
+                <div>
+                    <label>Contraseña</label>
+                    <input type="password" name="password" id="password_id">
+                </div>
+                <div id="mensaje"></div>
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
